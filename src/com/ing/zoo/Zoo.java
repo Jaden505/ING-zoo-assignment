@@ -21,6 +21,10 @@ public class Zoo {
         wally.name = "wally";
         Zebra marty = new Zebra();
         marty.name = "marty";
+        Giraffe gerry = new Giraffe();
+        gerry.name = "Gerry";
+        Crocodile chomper = new Crocodile();
+        chomper.name = "Chomper";
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
@@ -50,6 +54,14 @@ public class Zoo {
             {
                 marty.sayHello();
             }
+            else if(animalName.equals(gerry.name))
+            {
+                gerry.sayHello();
+            }
+            else if(animalName.equals(chomper.name))
+            {
+                chomper.sayHello();
+            }
             else
             {
                 henk.sayHello();
@@ -57,6 +69,8 @@ public class Zoo {
                 dora.sayHello();
                 wally.sayHello();
                 marty.sayHello();
+                gerry.sayHello();
+                chomper.sayHello();
             }
         }
         else if(input.equals(commands[1]))
@@ -64,17 +78,21 @@ public class Zoo {
             elsa.eatLeaves();
             marty.eatLeaves();
             dora.eatLeaves();
+            gerry.eatLeaves();
         }
         else if(input.equals(commands[2]))
         {
             henk.eatMeat();
             wally.eatMeat();
+            chomper.eatMeat();
         }
         else if(input.equals(commands[3]))
         {
             henk.doTrick();
             elsa.doTrick();
             wally.doTrick();
+            gerry.doTrick();
+            chomper.doTrick();
         }
         else
         {
