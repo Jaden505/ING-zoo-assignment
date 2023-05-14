@@ -26,9 +26,55 @@ public class Zoo {
         System.out.print("Voer uw command in: ");
 
         String input = scanner.nextLine();
-        if(input.equals(commands[0] + " henk"))
+        if(input.equals(commands[0]))
         {
-            henk.sayHello();
+            System.out.println("Which animal do you want to say hello to?");
+            String animalName = scanner.nextLine();
+            if(animalName.equals(henk.name))
+            {
+                henk.sayHello();
+            }
+            else if(animalName.equals(elsa.name))
+            {
+                elsa.sayHello();
+            }
+            else if(animalName.equals(dora.name))
+            {
+                dora.sayHello();
+            }
+            else if(animalName.equals(wally.name))
+            {
+                wally.sayHello();
+            }
+            else if(animalName.equals(marty.name))
+            {
+                marty.sayHello();
+            }
+            else
+            {
+                henk.sayHello();
+                elsa.sayHello();
+                dora.sayHello();
+                wally.sayHello();
+                marty.sayHello();
+            }
+        }
+        else if(input.equals(commands[1]))
+        {
+            elsa.eatLeaves();
+            marty.eatLeaves();
+            dora.eatLeaves();
+        }
+        else if(input.equals(commands[2]))
+        {
+            henk.eatMeat();
+            wally.eatMeat();
+        }
+        else if(input.equals(commands[3]))
+        {
+            henk.doTrick();
+            elsa.doTrick();
+            wally.doTrick();
         }
         else
         {

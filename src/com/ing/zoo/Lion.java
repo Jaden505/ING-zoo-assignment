@@ -20,4 +20,8 @@ public class Lion {
         eatText = "nomnomnom thx mate";
         System.out.println(eatText);
     }
+
+    public void doTrick() {
+        System.out.println("Lion " + name + " jumps through a ring of fire!");
+    }
 }

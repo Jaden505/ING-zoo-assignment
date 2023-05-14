@@ -20,4 +20,8 @@ public class Hippo {
         eatText = "munch munch lovely";
         System.out.println(eatText);
     }
+
+    public void doTrick() {
+        System.out.println("Hippo " + name + " performs a graceful underwater dance!");
+    }
 }

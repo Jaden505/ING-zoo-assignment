@@ -38,4 +38,8 @@ public class Tiger {
         }
         System.out.println(trick);
     }
+    
+    public void doTrick() {
+        System.out.println("Tiger " + name + " roars loudly and scares the audience!");
+    }
 }
